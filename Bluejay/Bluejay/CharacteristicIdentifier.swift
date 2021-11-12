@@ -46,7 +46,7 @@ public struct CharacteristicIdentifier {
 
     /// Check equality between a `CharacteristicIdentifier` and a `CBCharacterstic`.
     public static func == (lhs: CharacteristicIdentifier, rhs: CBCharacteristic) -> Bool {
-        return (lhs.uuid == rhs.uuid) && (lhs.service!.uuid == rhs.service!.uuid)
+        return (lhs.uuid == rhs.uuid) && (lhs.service.uuid == rhs.service!.uuid)
     }
 }
 
